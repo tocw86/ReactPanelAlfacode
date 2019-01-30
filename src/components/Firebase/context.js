@@ -2,6 +2,7 @@ import React from 'react';
 
 const FirebaseContext = React.createContext(null);
 
+//obudowa
 export const withFirebase = Component => props => (
     <FirebaseContext.Consumer>
       {firebase => <Component {...props} firebase={firebase} />}
