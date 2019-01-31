@@ -64,9 +64,9 @@ class SignInFormBase extends Component {
 
     return (
       <form onSubmit={this.onSubmit}>
-       <div class="form-group">
-          <label class="label">Username</label>
-          <div class="input-group">
+       <div className="form-group">
+          <label className="label">Username</label>
+          <div className="input-group">
             <input 
             type="text" 
             name="email"
@@ -75,25 +75,25 @@ class SignInFormBase extends Component {
               placeholder="Username"
               onChange={this.onChange}
             />
-            <div class="input-group-append">
-              <span class="input-group-text">
-                <i class="mdi mdi-check-circle-outline"></i>
+            <div className="input-group-append">
+              <span className="input-group-text">
+                <i className="mdi mdi-check-circle-outline"></i>
               </span>
             </div>
           </div>
         </div>
-        <div class="form-group">
-                  <label class="label">Password</label>
-                  <div class="input-group">
+        <div className="form-group">
+                  <label className="label">Password</label>
+                  <div className="input-group">
                     <input name="password" type="password" className="form-control" value={password} placeholder="*********"  onChange={this.onChange}/>
-                    <div class="input-group-append">
-                      <span class="input-group-text">
-                        <i class="mdi mdi-check-circle-outline"></i>
+                    <div className="input-group-append">
+                      <span className="input-group-text">
+                        <i className="mdi mdi-check-circle-outline"></i>
                       </span>
                     </div>
                   </div>
                 </div>
-                <div class="form-group">
+                <div className="form-group">
                   <button className="btn btn-primary submit-btn btn-block" disabled={isInvalid} type="submit">Login</button>
                 </div>
     
